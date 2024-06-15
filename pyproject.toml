@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "building-data-driven-applications-with-llamaindex"
+version = "0.1.0"
+description = ""
+authors = ["Saiqul Haq <saiqulhaq@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.11.9"
+llama-index = "0.10.15"
+llama-index-program-evaporate = "0.1.2"
+openai = "1.13.3"
+pandas = "1.5.2"
+PyYAML = "6.0.1"
+
+streamlit = "^1.35.0"
+pypdf = "^4.2.0"
+docx2txt = "^0.8"
+wikipedia = "^1.4.0"
+llama-index-readers-wikipedia = "^0.1.4"
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jupyter-lab = "jupyter lab"
